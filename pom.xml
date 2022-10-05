@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>nk-framework</artifactId>
+        <groupId>com.sakuraio.nk</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>nk-file-provider</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.sakuraio.nk</groupId>
+                <artifactId>nk-framework-dependencies</artifactId>
+                <version>${nk-framework-dependencies-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sakuraio.nk</groupId>
+            <artifactId>nk-framework-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sakuraio.nk</groupId>
+            <artifactId>nk-framework-file</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sakuraio.nk</groupId>
+            <artifactId>nk-framework-error</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <!-- 开发配置 -->
+    <repositories>
+        <!-- 非生产库-snapshot -->
+        <repository>
+            <id>aliyun-packages-snapshot</id>
+            <url>https://packages.aliyun.com/maven/repository/2053914-snapshot-vBdZUN</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- maven 分发配置 -->
+    <distributionManagement>
+        <!-- 生产库-release -->
+        <repository>
+            <id>aliyun-packages-release</id>
+            <url>https://packages.aliyun.com/maven/repository/2053914-release-yb1jfn</url>
+        </repository>
+        <!-- 非生产库-snapshot -->
+        <snapshotRepository>
+            <id>aliyun-packages-snapshot</id>
+            <url>https://packages.aliyun.com/maven/repository/2053914-snapshot-vBdZUN</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
