@@ -44,31 +44,32 @@
         </filter>
     </appender>
 
-    <logger name="org.springframework.http" level="warn"/>
-    <logger name="org.springframework.security" level="warn"/>
-    <logger name="org.springframework.boot" level="warn"/>
-    <logger name="org.springframework.beans" level="warn"/>
-    <logger name="org.springframework.core" level="warn"/>
-    <logger name="org.springframework.data" level="warn"/>
-    <logger name="org.springframework.context" level="warn"/>
-    <logger name="org.springframework.cloud" level="warn"/>
-    <logger name="org.springframework.boot.web.embedded" level="warn"/>
+    <logger name="org.springframework.http" level="info"/>
+    <logger name="org.springframework.security" level="info"/>
+    <logger name="org.springframework.boot" level="info"/>
+    <logger name="org.springframework.beans" level="info"/>
+    <logger name="org.springframework.core" level="info"/>
+    <logger name="org.springframework.data" level="info"/>
+    <logger name="org.springframework.context" level="info"/>
+    <logger name="org.springframework.cloud" level="info"/>
+    <logger name="org.springframework.boot.web.embedded" level="info"/>
     <logger name="_org.springframework.web.servlet" level="info"/>
-    <logger name="org.springframework.jmx" level="warn"/>
-    <logger name="org.springframework.aop" level="warn"/>
-    <logger name="org.springframework.ui" level="warn"/>
-    <logger name="org.hibernate.validator" level="warn"/>
-    <logger name="org.jboss" level="warn"/>
-    <logger name="org.eclipse.jetty" level="warn"/>
-    <logger name="org.mybatis" level="warn"/>
-    <logger name="org.apache.ibatis" level="warn"/>
-    <logger name="com.zaxxer.hikari" level="warn"/>
-    <logger name="reactor" level="warn"/>
-    <logger name="io.netty" level="warn"/>
-    <logger name="io.lettuce" level="warn"/>
-    <logger name="springfox.documentation" level="warn"/>
-    <logger name="org.springframework.boot.autoconfigure.logging" level="warn"/>
-    <logger name="org.apache.http" level="warn"/>
+    <logger name="org.springframework.jmx" level="info"/>
+    <logger name="org.springframework.aop" level="info"/>
+    <logger name="org.springframework.ui" level="info"/>
+    <logger name="org.springframework.boot.actuate" level="info"/>
+    <logger name="org.hibernate.validator" level="info"/>
+    <logger name="org.jboss" level="info"/>
+    <logger name="org.eclipse.jetty" level="info"/>
+    <logger name="org.mybatis" level="info"/>
+    <logger name="org.apache.ibatis" level="info"/>
+    <logger name="com.zaxxer.hikari" level="info"/>
+    <logger name="reactor" level="info"/>
+    <logger name="io.netty" level="info"/>
+    <logger name="io.lettuce" level="info"/>
+    <logger name="springfox.documentation" level="info"/>
+    <logger name="org.springframework.boot.autoconfigure.logging" level="info"/>
+    <logger name="org.apache.http" level="info"/>
 
     <!--开发环境:打印控制台-->
     <springProfile name="dev">
