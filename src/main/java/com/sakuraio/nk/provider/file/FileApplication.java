@@ -13,8 +13,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * @author nekoimi 2022/10/04
  */
 @Slf4j
-@EnableDiscoveryClient
 @EnableWebMvc
+@EnableDiscoveryClient
 @SpringBootApplication
 public class FileApplication {
 
