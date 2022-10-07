@@ -3,8 +3,8 @@ package com.sakuraio.nk.provider.file.controller;
 import com.sakuraio.nk.core.protocol.BaseResponse;
 import com.sakuraio.nk.error.Errors;
 import com.sakuraio.nk.error.exception.BizException;
-import com.sakuraio.nk.file.service.FileRemoteService;
-import com.sakuraio.nk.file.vo.FileInfo;
+import com.sakuraio.nk.file.api.service.FileRemoteService;
+import com.sakuraio.nk.file.api.vo.FileInfo;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
