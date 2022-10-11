@@ -17,6 +17,6 @@ public class FileController implements FileRemoteService {
 
     @Override
     public BaseResponse<FileInfo> save() {
-        throw new BizException(Errors.SERVER_ERROR);
+        return BaseResponse.ok();
     }
 }
